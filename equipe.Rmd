@@ -1,0 +1,44 @@
+---
+title: "Equipe"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,echo=FALSE}
+library(kableExtra)
+
+equipe <- data.frame(Nome=c("Prof. Iara Endruweit Battisti (**Coordenadora**)",
+                            "Profa. Denize Ivete Reis",
+                            "Prof. Erikson Kaszubowski",
+                            "Prof. Reneo Pedro Prediger",
+                            "Profa. Tatiane Chassot",
+                            "Me. Felipe M. Smolski",
+                            "Letícia Slodkowski (*Bolsista*)",
+                            "Jaíne Frank (*Voluntária*)",
+                            "Jaqueline Caye (*Voluntária*)"),
+                     Email=c("iara.battisti@uffs.edu.br",
+                             "denizeir@uffs.edu.br",
+                             "erikson84@yahoo.com.br",
+                             "reneo@unijui.tche.br",
+                             "tatianechassot@uffs.edu.br",
+                             "felipesmolski@hotmail.com",
+                             "leticiaslodkowski98@hotmail.com",
+                             "",
+                             ""),
+                     Lattes=c("http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4798297H5",
+                                          "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4772840Z6",
+                              "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4744198A1",
+                              "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4727608J2",
+                              "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4188948P3",
+                              "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8279859Z3",
+                              "",
+                              "",
+                              ""))
+
+kable(equipe) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+

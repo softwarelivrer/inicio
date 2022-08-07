@@ -1,0 +1,53 @@
+name: R
+output_dir: '.'
+navbar:
+  title: PROJETO DE EXTENSÃO - UFFS
+  type: inverse
+  left:
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: Informações
+    icon: fa-file-pdf-o
+    menu:
+    - text: O Curso
+      icon: fa-file-pdf-o
+      href: curso.html
+    - text: Conteúdo
+      icon: fa-file-archive-o
+      href: conteudo.html
+    - text: Links
+      icon: fa-link
+      href: links.html
+  - text: Cronograma
+    icon: fa-calendar
+    href: cronograma.html
+  - text: Downloads
+    icon: fa-download
+    menu:
+    - text: Curso Básico
+      href: http://www.editorafaith.com.br/ebooks/grat/978-85-68221-44-0.pdf
+    - text: Curso Avançado
+      href: https://smolski.github.io/livroavancado/
+    - text: Atividades
+      icon: fa-bookmark
+      href: atividades.html
+    - text: Livro
+      icon: fa-bookmark
+      href: livro.html      
+  - text: Inscrições
+    icon: fa-pencil
+    href: inscricoes.html
+  right:
+  - text: Equipe
+    icon: fa-users
+    href: equipe.html
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    includes:
+      in_header: google-analytics.js
+    lib_dir: site_libs
+    self_contained: no
+

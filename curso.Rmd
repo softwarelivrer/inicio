@@ -1,0 +1,34 @@
+---
+title: "Curso"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Objetivo Geral:
+
+O objetivo principal do projeto é atender alunos, bolsistas, comunidade interna e externa através de cursos de capacitação na análise de dados primários ou secundários utilizando um software livre de análise estatística, especificamente o software R. Ainda, objetiva-se a troca de experiências vinculando dados provindos de diferentes pesquisas dos participantes.
+
+# Material didático:
+
+– formato digital
+
+# Avaliação:
+
+Se dará de três formas:
+
+– participação de forma quantitativa: presença nos encontros;
+
+– participação de forma qualitativa: participação efetiva nas atividades dos encontros;
+
+– avaliação do curso, do projeto e autoavaliação.
+
+# Certificação:
+
+Certificação para participantes dos cursos executados no projeto, contabilizando 40h para aqueles que participarem de no mínimo 75% das atividades de cada curso.
+
+# Público:
+
+Com conhecimento de Estatística Básica.

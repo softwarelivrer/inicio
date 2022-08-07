@@ -1,0 +1,90 @@
+---
+title: "Conteúdo"
+output:  
+  html_document:  
+    toc: yes  
+    toc_float: yes 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# **Tópicos – Curso Básico**
+
+## MÓDULO 1 – INTRODUÇÃO AO R
+
+- Download e instalação do R e RStudio
+
+- Interface do RStudio: comando de linha, edição de scripts, variáveis e histórico, gráfico e ajuda
+
+- Importando dados pelo comando de linha e pela interface gráfica
+
+- Uso básico do comando de linha: criação e inspeção de objetos no R
+
+- Operações simples no comando de linha
+
+- Acesso a vetores e elementos em matrizes de dados
+
+- Reformatar dados
+
+- Filtrar casos e variáveis
+
+- Combinar conjuntos de dados diferentes
+
+- Manipulação de bancos de dados
+
+## MÓDULO 2 – ESTATÍSTICA DESCRITIVA
+
+- Tabelas univariadas e bivariadas
+
+- Gráficos univariados e bivariados
+
+- Medidas de posição
+
+- Medidas de dispersão
+
+- Medidas separatrizes
+
+## MÓDULO 3 – INFERÊNCIA ESTATÍSTICA
+
+- Intervalo de confiança
+
+- Teste t para comparação entre duas médias
+
+- Teste Z para comparação entre duas proporções
+
+## MÓDULO 4 – TESTE QUI-QUADRADO
+
+- Para uma variável (aderência)
+
+- Para duas variáveis (associação)
+
+- Medidas de magnitude
+
+## MÓDULO 5 – MODELOS DE REGRESSÃO
+
+- Correlação entre duas variáveis
+
+- Regressão simples e relação com coeficiente de correlação
+
+- Noções de regressão multivariada:covariáveis categoriais, covariáveis contínuas e interações
+
+- Noções de ANOVA e ANCOVA
+
+- Noções de análises diagnósticas: resíduos, pontos influentes
+
+# **Tópicos – Curso Avançado**
+
+## MÓDULO 6 – Delineamentos Experimentais
+
+## MÓDULO 7 – Modelos de Regressão Logística
+
+## MÓDULO 8 - Ajuste de Parâmetros em Funções não Lineares
+
+## MÓDULO 9 - RMarkdown
+
+## MÓDULO 10 - Metodologia de Superfície Resposta
+
+## MÓDULO 11  - Análise Fatorial
+
+

@@ -1,0 +1,48 @@
+---
+title: "Materiais para download - Curso Avançado"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Módulo I – Delineamentos experimentais**
+
+[Roteiro Aula 1](https://github.com/Smolski/softwarelivrer/blob/master/avancado/delineamentos_experimentais.pdf)
+
+[DBC](https://github.com/Smolski/softwarelivrer/blob/master/avancado/dbc.xls)
+
+[DIC](https://github.com/Smolski/softwarelivrer/blob/master/avancado/dic.xls)
+
+**Módulo II – Análise Fatorial**
+
+[Roteiro Aula 2](https://github.com/Smolski/softwarelivrer/blob/master/avancado/analise_fatorial1.pdf)
+
+[creme_dental_Exemplo1](https://github.com/Smolski/softwarelivrer/blob/master/avancado/creme_dental_exemplo1.xlsx)
+
+**Módulo III – Regressão Logística**
+
+[Roteiro Aula 3](https://github.com/Smolski/softwarelivrer/blob/master/avancado/reg_logistica3.pdf)
+
+**Módulo IV – Regressão Múltipla**
+
+[Roteiro Aula 4](https://github.com/Smolski/softwarelivrer/blob/master/avancado/modulo-4-modelos-de-regressc3a3o-curso-avanc3a7ado.pdf)
+
+[monica](https://github.com/Smolski/softwarelivrer/blob/master/avancado/monica.xls)
+
+[arvore2](https://github.com/Smolski/softwarelivrer/blob/master/avancado/arvore2.xlsx)
+
+**Módulo V – Introdução aos recursos de texto R**
+
+[Roteiro Aula 5](https://github.com/Smolski/softwarelivrer/blob/master/avancado/modulo_i_ferramentas_de_texto1.pdf)
+
+[Exemplo de modelo de formatação](https://github.com/Smolski/softwarelivrer/blob/master/avancado/modelo.docx)
+
+[Normatização referências](https://github.com/citation-style-language/styles)
+
+[rmarkdown-cheatsheet](https://github.com/Smolski/softwarelivrer/blob/master/avancado/rmarkdown-cheatsheet.pdf)
+
+[rmarkdown-cheatsheet-2.0](https://github.com/Smolski/softwarelivrer/blob/master/avancado/rmarkdown-cheatsheet-2-0.pdf)
+
+[rmarkdown-reference](https://github.com/Smolski/softwarelivrer/blob/master/avancado/rmarkdown-reference.pdf)

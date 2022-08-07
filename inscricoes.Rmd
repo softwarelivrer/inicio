@@ -1,0 +1,41 @@
+---
+title: "Inscrições"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Inscrições 2019
+
+Para realizar a sua inscrição no módulo Avançado, clique no link abaixo, preencha adequadamente os dados requeridos e aguarde a confirmação de sua inscrição.
+
+<!--
+**Incrição Curso 2018 - 30 vagas** - Em breve!
+-->
+
+<!--
+[Inscrição Curso 2018 - 30 vagas](https://docs.google.com/forms/d/e/1FAIpQLSeeHVoU8uR_dUB1rxoXJ5YD64ClVuePztOMIRe98o12DXWsJg/viewform)
+--->
+
+[Inscrição Curso 2019.2 - 30 vagas](https://docs.google.com/forms/d/e/1FAIpQLSf7ZKnoEX8QmOQVA3TyPNVmDbxtsrl-PcpB5I6P4V5vk0QO5Q/viewform)
+
+
+
+**PERÍODO DE INSCRIÇÃO:** 14 a 22 de agosto de 2019
+
+**Modalidade do Curso:** PRESENCIAL
+
+**Horário:** 17h às 21h
+
+**Carga horária**: 40 horas
+
+**Local das Atividades:**
+
+Capacitação: Laboratório de Informática do Seminário, 407 do Bloco A - UFFS - Campus Cerro Largo
+
+Endereço: Rua Dr. João Sebastiany - Centro, Cerro Largo - RS, CEP 98700-000.
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5047.335956340832!2d-54.74127082298268!3d-28.151437500616925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fed774fd4a5521%3A0x25297788778b4f64!2sUniversidade+Federal+da+Fronteira+Sul%2C+Campus+Cerro+Largo!5e0!3m2!1spt-BR!2sbr!4v1553875918585!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

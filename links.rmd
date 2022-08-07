@@ -1,0 +1,34 @@
+---
+title: "Links para downloads"
+output: html_document
+---
+## Links do curso
+
+[R](https://cran-r.c3sl.ufpr.br/bin/windows/base/)
+
+[Rstudio](http://www.rstudio.com/products/rstudio/download)
+
+[RMarkdown](https://rmarkdown.rstudio.com/)
+
+[Shiny](https://www.rstudio.com/products/shiny/)
+
+[Miktex](https://miktex.org/download)
+
+[Laboratório Openintro](http://www.openintro.org)
+
+
+<!--[Baixar](Panel101.dta)-->
+
+
+## Links sobre o R
+
+
+[International Seminar on Statistics with R](http://ser.uff.br/)
+
+[Estatística é com R!](http://www.estatisticacomr.uff.br/)
+
+[RPubs](https://rpubs.com/)
+
+[R-bloggers](https://www.r-bloggers.com/)
+
+

@@ -1,0 +1,56 @@
+---
+title: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Seguem as bases de dados dos exercícios que constam ao final de cada capítulo do livro.
+
+## Livro "**Software R: Análise estatística de dados utilizando um programa livre**"
+
+[Livro](http://www.editorafaith.com.br/ebooks/grat/978-85-68221-44-0.pdf)
+
+### Errata:
+
+- Exercício número 6 do capítulo 3 - "Estatística Inferencial": 
+
+**6.**	(<https://www.passeidireto.com/arquivo/25297344/aula-19-testes-para-proporcao>) Uma pesquisa conclui que 90% dos médicos recomendam aspirina a pacientes que têm filhos. Teste a afirmação contra a alternativa de que a percentagem é inferior a 90%, se numa amostra aleatória de 100 médicos, 80 recomendam aspirina.
+
+### Cap 1 - Primeiros Passos com o R
+
+Dados: [arvores](arvores.xlsx), [bancodedados1](bancodedados11.xlsx)
+
+Exercício resolvido: [baixar](ExCap1.pdf)
+
+
+### Cap 2 - Estatística Descritiva
+
+Dados:  [arvores](arvores.xlsx), [pesquisa\_dados](pesquisa_dados.xlsx)
+
+Exercício resolvido: [baixar](ExCap2.pdf)
+
+
+### Cap 3 - Estatística Inferencial
+
+Exercício resolvido: [baixar](ExCap3.pdf)
+
+### Cap 4 - Teste de Qui-Quadrado 
+
+Exercício resolvido: [baixar](ExCap4.pdf)
+
+### Cap 5 - Modelos de Regressão Linear Simples
+
+Dados: [peixes1](peixes1.xls)
+
+Exercício resolvido: [baixar](ExCap5.pdf)
+ 
+### Cap 6 - RMarkdown
+
+Exercício resolvido: [baixar](ExCap3.Rmd) , [referencias](book.bib)
+
+
+
+

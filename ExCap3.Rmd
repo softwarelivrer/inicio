@@ -1,0 +1,123 @@
+---
+title: "Exercícios resolvidos - CAP 3 - Estatística Inferencial"
+author: "Tatiane Chassot"
+lang: pt-Br
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+link-citations: yes
+bibliography:
+- book.bib
+- packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercícios
+
+**1.** 	A concentração de compostos químicos do solo foi medida em dez amostras aleatórias de um solo de uma área contaminada. A concentração medida, em mg/Kg, foi 1,4  0,6  1,2  1,6  0,5  0,7  0,3  0,8  0,2  e 0,9. Calcule o intervalo de 99\% para a média de concentração.
+
+```{r}
+concentracao=c(1.4, 0.6, 1.2, 1.6, 0.5, 0.7, 0.3, 0.8, 0.2 )
+t.test(concentracao,conf.level = 0.99)
+```
+
+
+**2.**	Uma pesquisa foi realizada para verificar a satisfação dos alunos de uma escola em relação aos serviços fornecidos pela cantina. Utilizando-se uma amostra aleatória de 25 alunos, as respostas fornecidas foram:
+
+  --------------- -------------- --------------- -------------- --------------
+  satisfeito      não satisfeito satisfeito      satisfeito     satisfeito
+  satisfeito      satisfeito     satisfeito      não satisfeito satisfeito
+  não satisfeito  não satisfeito não satisfeito  satisfeito     satisfeito
+  não satisfeito  satisfeito     satisfeito      não satisfeito não satisfeito
+  não satisfeito  não satisfeito satisfeito      satisfeito     satisfeito
+  --------------- -------------- --------------- -------------- --------------
+
+
+Construa o intervalo de confiança para a proporção populacional dos alunos satisfeitos considerando um nível de confiança de 90\%.
+
+```{r}
+prop.test(14, 25, conf.level = 0.90)
+```
+
+
+**3.**	[@Morettin2009] Uma companhia de cigarros anuncia que o índice médio de nicotina dos cigarros que fabrica apresenta-se abaixo de 23 mg por cigarro. Um laboratório realiza seis análises desse índice, obtendo: 27, 24, 21, 25, 26, 22. Pode-se aceitar a afirmação do fabricante?
+
+```{r}
+nicotina=c(27, 24, 21, 25, 26, 22)
+t.test(nicotina, alt="less", mu=23)
+```
+
+
+**4.**	[@Fonseca2010] As estaturas de 20 recém-nascidos foram tomadas no Departamento de Pediatria da FNRP, cujos resultados em cm são: 41 50 52 49 49 54 50 47 52 49 50 52 50 47 49 51 46 50 49 50. Teste a hipótese de que a média desses recém nascidos é 50 cm.
+
+```{r}
+estatura=c(41,50,52,49,49,54,50,47,52,49,50,52,50,47,49,51,46,50,49,50)
+t.test(estatura, alt="two.sided", mu=50)
+```
+
+
+**5.**	A fim de determinar a eficiência de um medicamento antitérmico, a temperatura corporal (em graus Celsius) de 15 indivíduos foi medida. Em seguida, foi administrado o medicamento e após uma hora a temperatura foi medida novamente. Os resultados podem ser encontrados na tabela abaixo.
+
+```{r, echo=FALSE, fig.subcap='Fonte: Elaborado pelo(s) autor(es).'}
+
+library(knitr)
+exerc6=data.frame(Antes=c("37,5","36,0","39,0","38,0","37,8","38,5","36,9","39,4","37,2","38,1","39,3","37,5","38,5","37,8","39,0"),
+                  Depois=c("37,8","36,4","37,6","37,2","36,9","37,7","36,8","38,1","36,7","37,3","38,0","37,1","36,6","35,0","39,0")
+)
+
+knitr::kable(exerc6)
+```
+
+<!--
+
+```{r, echo=FALSE,size = "tiny"}
+
+require(knitr)
+cob2=c("Antes","Depois")
+tecidoa=c(37.5,36.0,39.0,38.0,37.8,38.5,36.9,39.4,37.2,38.1,39.3,37.5,38.5,37.8,39.0)
+tecidob=c(37.8,36.4,37.6,37.2,36.9,37.7,36.8,38.1,36.7,37.3,38.0,37.1,36.6,35.0,39.0)
+amostdep3=cbind(c("Antes", "Depois"),rbind(tecidoa,tecidob))
+
+knitr::kable(amostdep3, row.names = FALSE)
+```  
+-->
+
+Houve ou não diminuição da temperatura dos indivíduos?
+
+```{r}
+antes = c(37.5, 36.0, 39.0, 38.0,37.8,38.5,36.9,39.4,37.2,38.1,39.3,37.5,38.5,37.8,39.0)
+depois = c(37.8,36.4,37.6,37.2,36.9,37.7,36.8,38.1,36.7,37.3,38.0,37.1,36.6,35.0,39.0)
+t.test(antes, depois, paired=TRUE)
+
+```
+
+**6.**	(<https://www.passeidireto.com/arquivo/25297344/aula-19-testes-para-proporcao>) Uma pesquisa conclui que 90% dos médicos recomendam aspirina a pacientes que têm filhos. Teste a afirmação contra a alternativa de que a percentagem é inferior a 90%, se numa amostra aleatória de 100 médicos, 80 recomendam aspirina.
+
+```{r}
+prop.test(80, 100, p=0.90, alt="greater")
+```
+
+
+
+**7.**(<http://www.im.ufrj.br/probest/Exercicios/C9_Exercicios.pdf>) Foi obtida uma amostra com 20 pilhas elétricas da marca A. Todas elas foram examinadas e sua duração, em horas, foi medida. O mesmo foi feito com uma amostra de 18 pilhas do mesmo tipo, porém da marca B.
+
+Marca A: 176 162 153 137 140 139 165 128 149 148 159 134 173 171 142 142 173 155 157 139 
+
+Marca B: 183 196 157 180 188 172 159 184 152 180 169 163 191 151 172 192 121 146
+
+Existe diferença entre as marcas de pilha quanto a sua duração?
+
+```{r}
+marcaa = c(176,162,153,137,140,139,165,128,149,148,159,134,173,171,142,142,173,155,157,139)
+marcab = c(183,196,157,180,188,172,159,184,152,180,169,163,191,151,172,192,121,146)
+var.test(marcaa,marcab)
+
+```
+
+
+
+# Referências

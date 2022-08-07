@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Conteúdo</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112034801-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112034801-1');
+</script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PROJETO DE EXTENSÃO - UFFS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-file-pdf-o"></span>
+     
+    Informações
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="curso.html">
+        <span class="fa fa-file-pdf-o"></span>
+         
+        O Curso
+      </a>
+    </li>
+    <li>
+      <a href="conteudo.html">
+        <span class="fa fa-file-archive-o"></span>
+         
+        Conteúdo
+      </a>
+    </li>
+    <li>
+      <a href="links.html">
+        <span class="fa fa-link"></span>
+         
+        Links
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="cronograma.html">
+    <span class="fa fa-calendar"></span>
+     
+    Cronograma
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-download"></span>
+     
+    Downloads
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Curso Básico</li>
+    <li class="dropdown-header">Curso Avançado</li>
+    <li>
+      <a href="atividades.html">
+        <span class="fa fa-bookmark"></span>
+         
+        Atividades
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="inscricoes.html">
+    <span class="fa fa-pencil"></span>
+     
+    Inscrições
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="equipe.html">
+    <span class="fa fa-users"></span>
+     
+    Equipe
+  </a>
+</li>
+<li>
+  <a href="https://github.com/Smolski/softwarelivrer">
+    <span class="fa fa-github"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Conteúdo</h1>
+
+</div>
+
+
+<div id="topicos-curso-basico" class="section level1">
+<h1><strong>Tópicos – Curso Básico</strong></h1>
+<div id="modulo-1-introducao-ao-r" class="section level2">
+<h2>MÓDULO 1 – INTRODUÇÃO AO R</h2>
+<p>1.1 Download e instalação do R e RStudio</p>
+<p>1.2 Interface do RStudio: comando de linha, edição de scripts, variáveis e histórico, gráfico e ajuda</p>
+<p>1.3 Importando dados pelo comando de linha e pela interface gráfica</p>
+<p>1.4 Uso básico do comando de linha: criação e inspeção de objetos no R</p>
+<p>1.5 Operações simples no comando de linha</p>
+<p>1.6 Acesso a vetores e elementos em matrizes de dados</p>
+<p>1.7 Reformatar dados</p>
+<p>1.8 Filtrar casos e variáveis</p>
+<p>1.9 Combinar conjuntos de dados diferentes</p>
+<p>1.10 Manipulação de bancos de dados</p>
+</div>
+<div id="modulo-2-estatistica-descritiva" class="section level2">
+<h2>MÓDULO 2 – ESTATÍSTICA DESCRITIVA</h2>
+<p>2.1 Tabelas univariadas e bivariadas</p>
+<p>2.2 Gráficos univariados e bivariados</p>
+<p>2.3 Medidas de posição</p>
+<p>2.4 Medidas de dispersão</p>
+<p>2.5 Medidas separatrizes</p>
+</div>
+<div id="modulo-3-inferencia-estatistica" class="section level2">
+<h2>MÓDULO 3 – INFERÊNCIA ESTATÍSTICA</h2>
+<p>3.1 Intervalo de confiança</p>
+<p>3.2 Teste t para comparação entre duas médias</p>
+<p>3.2 Teste Z para comparação entre duas proporções</p>
+</div>
+<div id="modulo-4-teste-qui-quadrado" class="section level2">
+<h2>MÓDULO 4 – TESTE QUI-QUADRADO</h2>
+<p>4.1 Para uma variável (aderência)</p>
+<p>4.2 Para duas variáveis (associação)</p>
+<p>4.3 Medidas de magnitude</p>
+</div>
+<div id="modulo-5-modelos-de-regressao" class="section level2">
+<h2>MÓDULO 5 – MODELOS DE REGRESSÃO</h2>
+<p>5.1 Correlação entre duas variáveis</p>
+<p>5.2 Regressão simples e relação com coeficiente de correlação</p>
+<p>5.3 Noções de regressão multivariada:covariáveis categoriais, covariáveis contínuas e interações</p>
+<p>5.4 Noções de ANOVA e ANCOVA</p>
+<p>5.5 Noções de análises diagnósticas: resíduos, pontos influentes</p>
+</div>
+</div>
+<div id="topicos-curso-avancado" class="section level1">
+<h1><strong>Tópicos – Curso Avançado</strong></h1>
+<div id="modulo-6-modelos-de-regressao-multipla" class="section level2">
+<h2>MÓDULO 6 – MODELOS DE REGRESSÃO MÚLTIPLA</h2>
+<p>6.1 Revisão de modelos lineares simples</p>
+<p>6.2 Interpretação de coeficientes de regressão</p>
+<p>6.3 Variáveis qualitativas e codificação dummy</p>
+<p>6.4 Interação entre preditores</p>
+<p>6.5 Visualização gráfica dos modelos</p>
+<p>6.6 Incerteza e teste de hipóteses com modelos lineares</p>
+</div>
+<div id="modulo-7-delineamentos-experimentais-dic-dbc-df" class="section level2">
+<h2>MÓDULO 7 – DELINEAMENTOS EXPERIMENTAIS (DIC, DBC, DF)</h2>
+</div>
+<div id="modulo-8-analsie-fatorial" class="section level2">
+<h2>MÓDULO 8 – ANÁLSIE FATORIAL</h2>
+</div>
+<div id="modulo-9-modelos-lineares-generalizados" class="section level2">
+<h2>MÓDULO 9 – MODELOS LINEARES GENERALIZADOS</h2>
+</div>
+<div id="modulo-10-introducao-a-tri-modelo-de-rasch-e-2pl" class="section level2">
+<h2>MÓDULO 10 – INTRODUÇÃO À TRI (Modelo de Rasch e 2PL)</h2>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

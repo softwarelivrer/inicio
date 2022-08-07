@@ -1,0 +1,64 @@
+---
+title: "Atividades"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Abaixo seguem as atividades de cada módulo do curso a serem efetuadas pelos alunos, bem como o link de envio do trabalho e a respectiva data limite de envio:
+
+## Curso Básico
+
+- **Introdução ao R – Felipe (envio até 15/04/2019)**
+
+Exercício 1: Dados: [arvores](arvores.xlsx), [bancodedados1](bancodedados11.xlsx) - Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLSej_aNNKa5sOlZcTl2v9HwnVUEVgIIhrY01fpNQBszd3QQkHA/viewform)
+
+
+- **Estatística Descritiva – Denize (envio até 16/04/2019)**
+
+Exercício 2: [baixar1](os2_lab_01A_port.pdf) [baixar2](Atividades_para_entregar.docx) - Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLSf-_eCimi3uJHfEzflROriKkP0wBnGjLu_gGuuKwz_p4jZg_g/viewform)
+
+
+- **Inferência Estatística – Tatiane (envio até 17/04/2019)**
+
+Exercício 3: [baixar]() - Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLScKkI1LyWGOWj_C7YgxwzhOULpQOjpAiBxASdwD77ARoKligw/viewform)
+
+- **Teste de qui-quadrado – Denize/Tati (envio até 18/04/2019)**
+
+Exercício 4: [baixar]() - Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLScimJgVp3jhdlaVET6xHpYR3K197hWvvzibHsg5kAV-UnT_LA/viewform)
+
+- **Modelos de regressão - Iara (envio até 24/04/2019)**
+
+Exercício 5: [baixar1](Exercícios_encontro_5_módulo_básico.docx), [baixar2](peixes1.xls) - Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLSeaYB5thYcgjCWX0XdNSHM9jMmql-nrJZvGoIaCtYldSWxy5Q/viewform)
+ 
+
+## Curso Avançado
+
+
+- **Delineamentos Experimentais - Tatiane (envio até 03/09/2019)**
+
+Exercício 6: Link de envio da atividade: [acessar](https://docs.google.com/forms/d/e/1FAIpQLScQExlT7dtf7adp90yBhGMjm88P3QIUGIGfhM0PxGlAN8LM_g/viewform?usp=sf_link)
+
+- **Modelos de Regressão Logística – Felipe (envio até 04/09/2019)**
+
+Exercício 7:  Script da Aula [script](script_regressaologistica.R) - Link de envio da atividade: [acessar](https://forms.gle/PGsYioYRPeSfGxMp8)
+
+- **Ajuste de Parâmetros em Funções não Lineares - Tiago (envio até 05/09/2019)**
+
+Exercício 8: Link de envio da atividade: [acessar](https://forms.gle/TT4viPNtzLaEdbYt6)
+
+- **RMarkdown - Letícia (envio até 10/09/2019)**
+
+Exercício 9: Link de envio da atividade: [acessar](https://forms.gle/S8Ut2Tkq2wrvN32i7)
+
+
+- **Metodologia de Superfície Resposta - Bruna, Jaqueline e Mônica (envio até 11/09/2019)**
+
+Exercício 10: - Link de envio da atividade: [acessar](https://forms.gle/RHJAsdk724RHUiH19)
+
+- **Análise fatorial – Denize (envio até 12/09/2019)**
+
+Exercício 11: - Link de envio da atividade: [acessar](https://forms.gle/jYJThgho4ypA85SF7)
+

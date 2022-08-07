@@ -1,0 +1,44 @@
+---
+title: "Materiais para download - Curso Básico"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Material para o Módulo I – Introdução ao R**
+
+[Roteiro Aula1](https://github.com/Smolski/softwarelivrer/raw/master/basico/roteiroaula1-25-05.pdf)
+
+[Banco de dados](https://raw.githubusercontent.com/Smolski/softwarelivrer/master/basico/nycData.csv)
+
+[Laboratório Módulo I](https://github.com/Smolski/softwarelivrer/blob/master/basico/intro.pdf)
+
+[Base de dados OMS para laboratório](https://github.com/Smolski/softwarelivrer/blob/master/basico/OMS.csv)
+
+**Material para o Módulo II – Estatística descritiva**
+
+[Roteiro Aula Estatística Descritiva](https://github.com/Smolski/softwarelivrer/blob/master/basico/roteiro-aula-estatc3adstica-descritiva.docx)
+
+[Pesquisa_DADOS](https://github.com/Smolski/softwarelivrer/blob/master/basico/pesquisa_dados1.xlsx)
+
+**Material para o Módulo III – Estatística inferencial**
+
+[Roteiro Aula 3](https://github.com/Smolski/softwarelivrer/blob/master/basico/roteiro-aula-33.pdf)
+
+[Exemplo – Árvores](https://github.com/Smolski/softwarelivrer/blob/master/basico/arvores.xlsx)
+
+**Material para o Módulo IV – Teste de Qui-quadrado**
+
+[Roteiro Aula 4](https://github.com/Smolski/softwarelivrer/blob/master/basico/aula_qq1.pdf)
+
+**Material para o Módulo V – Modelos de regressão**
+
+[Roteiro Aula 5](https://github.com/Smolski/softwarelivrer/blob/master/basico/roteiro5.pdf)
+
+Material disponibilizado pela Profa. Monize Visentini
+
+[Banco de Dados](https://github.com/Smolski/softwarelivrer/blob/master/basico/tabulac3a7c3a3o_est-cogn.xls)
+
+[Questionário tabulação](https://github.com/Smolski/softwarelivrer/blob/master/basico/questionc3a1rio-utaut_tabulac3a7c3a3o.doc)
