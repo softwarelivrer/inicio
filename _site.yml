@@ -26,7 +26,7 @@ navbar:
     icon: fa-download
     menu:
     - text: Curso Básico
-      href: http://www.editorafaith.com.br/ebooks/grat/978-85-68221-44-0.pdf
+      href: 'http://www.editorafaith.com.br/ebooks/grat/978-85-68221-44-0.pdf'
     - text: Curso Avançado
       href: https://smolski.github.io/livroavancado/
     - text: Atividades
